@@ -10,3 +10,10 @@ trackzilla
   Rest Api integration
   GraphQL integration
   Spring Actuator
+
+actuator-demo
+  JPA integration with Spring Boot using H2 database (insert queries provided in /src/main/resources/data.sql)
+  Spring Boot Actuator integration
+  Securing Actuator endpoints with Spring Security
+  Custom health and info endpoint
+  Custom actuator endpoint 

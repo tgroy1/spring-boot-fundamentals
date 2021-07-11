@@ -10,5 +10,6 @@
 	<modules>
 		<module>conference-demo</module>
 		<module>trackzilla</module>
+		<module>actuator-demo</module>
 	</modules>
 </project>
