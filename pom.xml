@@ -9,5 +9,6 @@
 	
 	<modules>
 		<module>conference-demo</module>
+		<module>trackzilla</module>
 	</modules>
 </project>
