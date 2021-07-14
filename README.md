@@ -17,3 +17,6 @@ actuator-demo
   Securing Actuator endpoints with Spring Security
   Custom health and info endpoint
   Custom actuator endpoint 
+  
+spel-demo
+  Demo project for Spring Expression Language
