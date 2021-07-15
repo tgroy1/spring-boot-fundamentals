@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop   
+    	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+	<aop:aspectj-autoproxy />
+
+	<bean id="jim" class="com.tgroy.aopdemo.example6.Passenger">
+		<property name="name" value="Jim"></property>
+		<property name="country" value="US"></property>
+	</bean>
+
+	<bean id="pam" class="com.tgroy.aopdemo.example6.Passenger">
+		<property name="name" value="Pam"></property>
+		<property name="country" value="UK"></property>
+	</bean>
+
+	<bean id="michael" class="com.tgroy.aopdemo.example6.Passenger">
+		<property name="name" value="Michael"></property>
+		<property name="country" value="AU"></property>
+	</bean>
+
+	<bean id="flight" class="com.tgroy.aopdemo.example6.Flight">
+		<property name="id" value="AA123"></property>
+		<property name="company" value="United Flights"></property>
+		<property name="passengers">
+			<list>
+				<ref bean="jim" />
+				<ref bean="pam" />
+				<ref bean="michael" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="ticket" class="com.tgroy.aopdemo.example6.Ticket">
+		<property name="passenger" ref="jim"></property>
+		<property name="number" value="1234567890"></property>
+	</bean>
+
+	<bean id="loggingAspect1"
+		class="com.tgroy.aopdemo.example6.aspects.LoggingAspect1" />
+	<bean id="loggingAspect2"
+		class="com.tgroy.aopdemo.example6.aspects.LoggingAspect2" />
+
+</beans>

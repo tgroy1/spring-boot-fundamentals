@@ -20,3 +20,6 @@
   
 **spel-demo**
   1. Demo project for Spring Expression Language
+  
+**aop-demo**
+  1. Demo project for Spring AOP

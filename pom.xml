@@ -12,5 +12,6 @@
 		<module>trackzilla</module>
 		<module>actuator-demo</module>
 		<module>spel-demo</module>
+		<module>aop-demo</module>
 	</modules>
 </project>
