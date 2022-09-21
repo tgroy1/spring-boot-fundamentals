@@ -9,8 +9,8 @@
     	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 	<aop:aspectj-autoproxy/>
 	
-	<bean id="employeeDao"
-		class="com.tgroy.aopdemo.example2.EmployeeDaoImpl" />
-	<bean id="loggingAspect"
-		class="com.tgroy.aopdemo.example2.LoggingAspect" />
+	<!-- <bean id="employeeDao"
+		class="com.tgroy.aopdemo.example2.EmployeeDaoImpl" /> -->
+	<!-- <bean id="loggingAspect"
+		class="com.tgroy.aopdemo.example2.LoggingAspect" /> -->
 </beans>

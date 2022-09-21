@@ -3,6 +3,9 @@ package com.tgroy.aopdemo.example2;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class EmployeeDaoImpl implements EmployeeDao {
 
 	private static Map<Integer, Employee> employeeMap = new HashMap<>();
